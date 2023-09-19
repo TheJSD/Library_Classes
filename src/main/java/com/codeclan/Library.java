@@ -21,4 +21,7 @@ public class Library {
     public boolean checkIfFull(){
         return this.countBooks() >= this.capacity;
     }
+    public boolean removeBook(Book book){
+        return this.collection.remove(book);
+    }
 }
